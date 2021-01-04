@@ -1,0 +1,13 @@
+<div id="myApp" ng-app="OneBinders" ng-controller="oneBindCtrl">
+  <div bindonce ng-repeat="place in places">
+    <a bo-href="place.src"><span bo-text="place.title"></span></a>
+  </div>
+
+  <div ng-repeat="place in places2">
+    <a bb-one-bind-href="place.src"><span bb-one-bind-text="place.title"></span></a>
+  </div>
+
+  <div ng-repeat="place in places3">
+    <a ng-href="{{place.src}}">{{place.title}}</a>
+  </div>
+</div>

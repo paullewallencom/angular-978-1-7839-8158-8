@@ -1,0 +1,8 @@
+<div ng-app="bbOneBinders" ng-controller="oneBindCtrl">
+  <div ng-repeat="place in places">
+    <div bb-one-bind-text="place.title"></div>
+    <a bb-one-bind-href="place.src"><img class="sampleImg" bb-one-bind-src="place.src"></a>
+  </div>
+    <div bb-one-bind-text="places[0].title"></div>
+    <a bb-one-bind-href="places[0].src"><img class="sampleImg" bb-one-bind-src="places[0].src"></a>
+</div>
